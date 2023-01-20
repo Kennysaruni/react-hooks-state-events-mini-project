@@ -1,6 +1,8 @@
+
+
 import React from "react";
 
-function CategoryFilter(categories, selectedCategory, onSelectCategory) {
+function CategoryFilter({ categories, selectedCategory, onSelectCategory }) {
   const categoryButtons = categories.map((category) => {
     const className = category === selectedCategory ? "selected" : null;
     return (
